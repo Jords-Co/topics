@@ -1,7 +1,7 @@
 /**
  * Current Year.
  * 
- * @author <cabal@digerati.design>
+ * @author Digerati <cabal@digerati.design>
  */
 export const currentYear = () => {
     const target = document.querySelector('[dd-date="current-year"]');

@@ -1,7 +1,7 @@
 /**
  * Skip to Main Content.
  * 
- * @author <cabal@digerati.design>
+ * @author Digerati <cabal@digerati.design>
  */
 export const skipToMainContent = () => {
     const trigger = document.querySelector('[dd-skip-to-main-content="trigger"]'),
