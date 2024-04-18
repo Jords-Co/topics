@@ -8,12 +8,14 @@ export const faqAccordion = () => {
     faqItems.forEach((faqItem) => {
         faqItem.addEventListener('click', () => {
             if (!faqItem.classList.contains('is-open')) {
+                /*
                 const openItems = document.querySelectorAll('.is-open');
                 if (openItems.length) {
                     openItems.forEach((openItem) => {
                         openItem.classList.remove('is-open');
                     });
                 }
+                */
                 faqItem.classList.add('is-open');
             } else {
                 faqItem.classList.remove('is-open');
