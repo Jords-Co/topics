@@ -1,10 +1,12 @@
+import { bodyBuilder } from '$digerati/bodyBuilder';
+import { currentYear } from "$digerati/currentYear";
 import { faqAccordion } from '$digerati/faqAccordion';
 import { skipToMainContent } from "$digerati/skipToMainContent";
-import { currentYear } from "$digerati/currentYear";
 
 window.Webflow || [];
 window.Webflow.push(() => {
-  skipToMainContent();
+  bodyBuilder();
   currentYear();
   faqAccordion();
+  skipToMainContent();
 });
