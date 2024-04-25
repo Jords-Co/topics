@@ -32,7 +32,6 @@ export const bodyBuilder = () => {
             });
         });
         bodyBuilder.addEventListener('mouseleave', () => {
-            console.log('mouseleave');
             bodyBuilders.forEach(function (item, index) {
                 const bodyBuilderImage = document.querySelector(bodyBuilders[index]);
                 const speechBubbleCtaImage = document.querySelector(speechBubbleCtas[index]);
