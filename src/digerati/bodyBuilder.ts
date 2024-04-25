@@ -7,7 +7,7 @@ export const bodyBuilder = () => {
     const bodyBuilder = document.querySelector('.home_bodybuilder_animation-wrapper');
     if (bodyBuilder) {
         const speechBubbleCtas = [
-            '.home_hero_english-cta',
+            '.home_hero_english-cta', /* <-- Default */
             '.home_hero_japanese-cta',
             '.home_hero_german-cta',
             '.home_hero_spanish-cta'
