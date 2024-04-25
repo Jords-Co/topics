@@ -12,7 +12,7 @@ export const bodyBuilder = () => {
             '.home_hero_german-cta',
             '.home_hero_spanish-cta'
         ];
-        const bodyBuilderImages = [
+        const bodyBuilders = [
             '.home_bodybuilder_english-animation', /* <-- Default */
             '.home_bodybuilder_japanese-animation',
             '.home_bodybuilder_german-animation',
@@ -21,20 +21,20 @@ export const bodyBuilder = () => {
         let languageIndex = 0;
         bodyBuilder.addEventListener('mouseenter', () => {
             languageIndex++;
-            if (languageIndex === bodyBuilderImages.length) {
+            if (languageIndex === bodyBuilders.length) {
                 languageIndex = 1;
             }
-            bodyBuilderImages.forEach(function (item, index) {
-                const bodyBuilderImage = document.querySelector(bodyBuilderImages[index]);
+            bodyBuilders.forEach(function (item, index) {
+                const bodyBuilderImage = document.querySelector(bodyBuilders[index]);
                 const speechBubbleCtaImage = document.querySelector(speechBubbleCtas[index]);
                 bodyBuilderImage.style.opacity = index === languageIndex ? 100 : 0;
                 speechBubbleCtaImage.style.display = index === languageIndex ? 'flex' : 'none';
             });
         });
         bodyBuilder.addEventListener('mouseleave', () => {
-            bodyBuilderImages.forEach(function (item, index) {
-                const bodyBuilderImage = document.querySelector(bodyBuilderImages[index]);
-                const speechBubbleCtaImage = document.querySelector(speechBubbleCtaImages[index]);
+            bodyBuilders.forEach(function (item, index) {
+                const bodyBuilderImage = document.querySelector(bodyBuilders[index]);
+                const speechBubbleCtaImage = document.querySelector(speechBubbleCtas[index]);
                 bodyBuilderImage.style.opacity = index === 0 ? 100 : 0;
                 speechBubbleCtaImage.syle.display = index === 0 ? 'flex' : 'none';
             });
