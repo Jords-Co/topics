@@ -32,11 +32,12 @@ export const bodyBuilder = () => {
             });
         });
         bodyBuilder.addEventListener('mouseleave', () => {
+            console.log('mouseleave');
             bodyBuilders.forEach(function (item, index) {
                 const bodyBuilderImage = document.querySelector(bodyBuilders[index]);
                 const speechBubbleCtaImage = document.querySelector(speechBubbleCtas[index]);
                 bodyBuilderImage.style.opacity = index === 0 ? 100 : 0;
-                speechBubbleCtaImage.syle.display = index === 0 ? 'flex' : 'none';
+                speechBubbleCtaImage.style.display = index === 0 ? 'flex' : 'none';
             });
         });
     }
